@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Welcome to ALC 4.0"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABOUT ALC"
+        android:background="@color/orange"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:id="@+id/about_alc"
+        android:fontFamily="casual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MY PROFILE"
+        android:layout_marginTop="20dp"
+        android:id="@+id/my_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/orange"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/about_alc"/>
+
+</android.support.constraint.ConstraintLayout>
